@@ -1,0 +1,133 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+      -
+        display: 'Hero Section'
+        fields:
+          -
+            handle: hero_heading
+            field:
+              type: text
+              display: 'Hero Heading'
+              validate:
+                - required
+          -
+            handle: hero_sub_heading
+            field:
+              type: textarea
+              display: 'Hero Sub Heading'
+              validate:
+                - required
+          -
+            handle: hero_image
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Hero Image'
+              validate:
+                - required
+      -
+        display: 'Section 2'
+        fields:
+          -
+            handle: section_2_main_heading
+            field:
+              type: text
+              display: 'Section 2 Main Heading'
+              validate:
+                - required
+          -
+            handle: section_2_items
+            field:
+              max_sets: 3
+              type: replicator
+              display: 'Section 2'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: icon
+                          field:
+                            max_files: 1
+                            min_files: 1
+                            container: assets
+                            type: assets
+                            display: Icon
+                            validate:
+                              - required
+                        -
+                          handle: heading
+                          field:
+                            type: text
+                            display: Heading
+                            validate:
+                              - required
+                        -
+                          handle: item_content
+                          field:
+                            type: textarea
+                            display: Content
+                            validate:
+                              - required
+      -
+        display: 'Page Settings'
+        fields:
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: featured_image
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Featured Image'

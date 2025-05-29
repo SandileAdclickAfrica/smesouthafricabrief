@@ -1,0 +1,20 @@
+tree:
+  -
+    id: 87d12f9a-734e-4ff0-bbb8-9e651ed7e1b9
+    entry: home
+  -
+    id: 4409fcec-a6d4-40ce-9e35-7161a255de38
+    title: Resources
+    url: 'https://smesouthafrica.co.za/sme-resources/'
+  -
+    id: cd7130f2-fe23-44f8-86bf-bbcb8c611d77
+    title: Funding
+    url: 'https://smesouthafrica.co.za/sme-funding/'
+  -
+    id: 6e4ec2b4-1f23-47cc-8239-3c353132867f
+    title: 'Business Advice'
+    url: 'https://advice.smesouthafrica.co.za/'
+  -
+    id: 9fc3a2bd-c60c-4e6a-85b9-ca9a1c322b18
+    title: Forum
+    url: 'https://advice.smesouthafrica.co.za/forum?fromOthServ=1'
