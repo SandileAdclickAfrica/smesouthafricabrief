@@ -1,0 +1,15 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: email_address
+            field:
+              input_type: email
+              placeholder: youremail@domain.com
+              type: text
+              display: 'Email Address'
+              validate:
+                - required

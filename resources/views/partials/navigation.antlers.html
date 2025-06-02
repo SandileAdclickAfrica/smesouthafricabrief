@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg shadow bg-white py-0 shadow-sm">
+    <div class="container py-2">
+        <a class="navbar-brand" href="#">
+            <img src="{{ theme_settings:theme_logo_image:permalink }}" class="img-fluid logo" alt="{{ theme_settings:theme_logo_image:alt }}" />
+        </a>
+
+        <div class="navbar-menu-btn-container align-items-center d-flex justify-content-center align-content-start align-items-md-center">
+
+            <button class="hamburger hamburger--emphatic js-hamburger navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                {{ nav:main_menu }}
+                    <li class="nav-item {{ navigation_class }}">
+                        <a class="nav-link {{ if is_current }}active{{ /if }}" aria-current="page" href="{{ url }}">
+                            {{ title }}
+                        </a>
+                    </li>
+                {{ /nav:main_menu }}
+            </ul>
+        </div>
+    </div>
+</nav>

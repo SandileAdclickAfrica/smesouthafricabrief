@@ -11,10 +11,16 @@ tree:
     title: Funding
     url: 'https://smesouthafrica.co.za/sme-funding/'
   -
+    id: 9fc3a2bd-c60c-4e6a-85b9-ca9a1c322b18
+    title: Forum
+    url: 'https://advice.smesouthafrica.co.za/forum?fromOthServ=1'
+  -
     id: 6e4ec2b4-1f23-47cc-8239-3c353132867f
     title: 'Business Advice'
     url: 'https://advice.smesouthafrica.co.za/'
   -
-    id: 9fc3a2bd-c60c-4e6a-85b9-ca9a1c322b18
-    title: Forum
-    url: 'https://advice.smesouthafrica.co.za/forum?fromOthServ=1'
+    id: 0fd4f497-a70b-4d45-8ec5-a44993ef3cc0
+    title: '<i class="fa-solid fa-paper-plane"></i> Subscribe'
+    url: '#'
+    data:
+      navigation_class: btn-subscribe

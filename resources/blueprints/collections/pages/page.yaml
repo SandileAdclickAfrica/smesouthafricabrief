@@ -30,15 +30,39 @@ tabs:
               validate:
                 - required
           -
-            handle: hero_image
+            handle: desktop_hero_image
             field:
               max_files: 1
               min_files: 1
               container: assets
               type: assets
-              display: 'Hero Image'
+              display: 'Desktop Hero Image'
               validate:
                 - required
+                - image
+          -
+            handle: mobile_hero_image
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              allow_uploads: false
+              type: assets
+              display: 'Mobile Hero Image'
+              validate:
+                - required
+                - image
+          -
+            handle: hero_background_image
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Hero Background Image'
+              validate:
+                - required
+                - image
       -
         display: 'Section 2'
         fields:
