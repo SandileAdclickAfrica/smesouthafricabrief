@@ -2,3 +2,7 @@ super: true
 name: 'Sandile Mazibuko'
 id: 8b55c82c-7480-4169-b0b5-2789048a2796
 password_hash: $2y$12$/.5Kfw1jIb3q2Yi0mPxx9u1NWp6E8HBsOU.R88t.6gCjYFEYbVWmy
+preferences:
+  assets:
+    assets:
+      mode: grid
