@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 8b55c82c-7480-4169-b0b5-2789048a2796
 updated_by: 8b55c82c-7480-4169-b0b5-2789048a2796
-updated_at: 1748854490
+updated_at: 1748936146
 hero_h: 'The All-In-One Newsletter Startup Founders'
 hero_sub_h: |-
   90% of startup fail.  Learn how not to with our weekly guides
@@ -64,4 +64,8 @@ section_2_main_heading: 'The SME South Africa Way'
 desktop_hero_image: desktop-hero-image.png
 mobile_hero_image: desktop-hero-image.png
 hero_background_image: hero-background-image.png
+newsletter_categories:
+  - sme-brand-voice
+  - sme-financial-management
+  - sme-business-management
 ---

@@ -5,11 +5,9 @@
             <div class="col-lg-6 p-5">
                 <h1 class="heading" >{{ hero_heading }}</h1>
                 <p class="sub-heading" >{{ hero_sub_heading }}</p>
-
-                <div class="hero-form">
-
-                </div>
-
+                <!-- **************** START FORM ****************-->
+                {{ partial:partials.forms.hero-subscribe-form }}
+                <!-- **************** END FORM ****************-->
             </div>
             <div class="col-lg-6 text-end p-0">
                 <img src="{{ desktop_hero_image:permalink }}" class="img-fluid rounded-5 rounded-start " alt="{{ desktop_hero_image:alt }}" />

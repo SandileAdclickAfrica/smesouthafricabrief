@@ -111,6 +111,25 @@ tabs:
                             validate:
                               - required
       -
+        display: Categories
+        fields:
+          -
+            handle: newsletter_categories
+            field:
+              options:
+                -
+                  key: sme-brand-voice
+                  value: 'SME Brand Voice'
+                -
+                  key: sme-financial-management
+                  value: 'Financial Management'
+                -
+                  key: sme-business-management
+                  value: 'Business Management'
+              multiple: true
+              type: select
+              display: 'Newsletter Categories'
+      -
         display: 'Page Settings'
         fields:
           -

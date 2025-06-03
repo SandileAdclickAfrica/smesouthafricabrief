@@ -6,3 +6,8 @@ preferences:
   assets:
     assets:
       mode: grid
+  forms:
+    subscribe_form:
+      filters:
+        test_form:
+          display: 'test form'
