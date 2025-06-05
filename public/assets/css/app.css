@@ -119,3 +119,7 @@ h6>a{
 .hero-form-container{
     background-color: var(--white);
 }
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}

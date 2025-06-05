@@ -8,6 +8,7 @@ use Statamic\Facades\Entry;
 
 class BeehiiveController extends Controller
 {
+
 //    public function index(){
 //
 //        $entry = Entry::find('home');
@@ -21,7 +22,6 @@ class BeehiiveController extends Controller
 //            ],
 //        ]);
 //    }
-
 
     public function index(Request $request){
 
@@ -51,7 +51,6 @@ class BeehiiveController extends Controller
                     ]);
 
             }else{
-
 
 //                return (new \Statamic\View\View)
 //                    ->template('home')
