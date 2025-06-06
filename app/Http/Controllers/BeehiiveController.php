@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\TmdbService;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Statamic\Facades\Entry;
@@ -23,7 +25,10 @@ class BeehiiveController extends Controller
 //        ]);
 //    }
 
+    protected $movies;
+
     public function index(Request $request){
+
 
         $entry = Entry::whereCollection('pages')
             ->where('slug', 'home')
@@ -52,18 +57,19 @@ class BeehiiveController extends Controller
 
             }else{
 
-//                return (new \Statamic\View\View)
-//                    ->template('home')
-//                    ->layout('layout')
-//                    ->cascadeContent($entry)
-//                    ->with([
-//                        'posts' => [
-//                            ['title' => 'First Post'],
-//                            ['title' => 'Second Post'],
-//                        ],
-//                    ]);
+                return (new \Statamic\View\View)
+                    ->template('home')
+                    ->layout('layout')
+                    ->cascadeContent($entry)
+                    ->with([
+                        'posts' => [
+                            ['title' => 'First Post'],
+                            ['title' => 'Second Post'],
+                        ],
+                    ]);
             }
         }else{
+
             return (new \Statamic\View\View)
                 ->template('home')
                 ->layout('layout')
